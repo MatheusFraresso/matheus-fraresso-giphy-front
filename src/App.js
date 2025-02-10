@@ -21,7 +21,7 @@ function App() {
 
   function changeOffset(event) {
     let offset = event.target.value
-    if (offset < 0 || offset > pagination.total_count) {
+    if (offset < 1 || offset > pagination.total_count) {
       alert("Offset number is invalid")
       setSearchOffset(searchOffset)
     } else {
